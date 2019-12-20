@@ -2,7 +2,11 @@
 
 @section('content')
 
-
+<?php 
+    function afficher(){
+        echo "test";
+    }
+?>
 <!--== Page Title Area Start ==-->
 <section id="page-title-area" class="section-padding overlay">
         <div class="container">
@@ -141,7 +145,53 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star unmark"></i>
                                                 </p>
-                                                <a href="#" class="rent-btn">Book It</a>
+                                                <button type="button" class="rent-btn" data-toggle="modal" data-target="#exampleModalCenter">Book It</button>
+                                                <!-- Start Modal -->
+                                                <div class="modal fade book-a-car " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labbelledby="exampleModalTitle" aria-hidden="true">
+                                                    <div class="modal-dialog " role="document">
+                                                        <div class="modal-content ">
+                                                            <div class="modal-header">
+                                                                <h5  id="Modaltitle"> Book Car</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form action="index.html">
+                                                                    <!--== Pick Up Location ==-->
+                                                                    <div class="pickup-location book-item">
+                                                                        <h4>PICK-UP LOCATION:</h4>
+                                                                        <select class="custom-select">
+                                                                            <option selected>Select</option>
+                                                                            <option value="1">Dhaka</option>
+                                                                            <option value="2">Comilla</option>
+                                                                            <option value="3">Barishal</option>
+                                                                            <option value="3">Rangpur</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <!--== Pick Up Location ==-->
+
+                                                                    <!--== Pick Up Date ==-->
+                                                                    <div class="pick-up-date book-item">
+                                                                        <h4>PICK-UP DATE:</h4>
+                                                                        <input id="startDate" placeholder="Pick Up Date" />
+
+                                                                        <div class="return-car">
+                                                                            <h4>Return DATE:</h4>
+                                                                            <input id="endDate" placeholder="Return Date" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--== Pick Up Date ==-->
+
+                                                                    <div class="text-center">
+                                                                        <button class="rent-btn">Book Now</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

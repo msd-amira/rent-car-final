@@ -371,7 +371,7 @@ a.slicknav_btn {
 }
 
 .book-a-car {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0);
 	margin-top: 118px;
 	padding: 30px 50px;
 }
@@ -430,20 +430,32 @@ a.slicknav_btn {
 	line-height: 33px;
 }
 
-.book-now-btn {
+.book-now-bt {
 	background-color: #ffd000;
-	color: #222;
+	color: rgb(34, 34, 34);
 	display: inline-block;
 	font-size: 15px;
 	font-weight: 600;
 	padding: 12px 30px;
 	border: none;
-	cursor: pointer;
 	text-transform: uppercase;
 }
+.book-now-bt:hover {
+	color: rgba(34, 34, 34, 0.952);
+}
 
+.book-now-btn {
+	background-color: #ffd00000;
+	color: rgba(34, 34, 34, 0);
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 12px 30px;
+	border: none;
+	text-transform: uppercase;
+}
 .book-now-btn:focus {
-	color: #222;
+	color: rgba(34, 34, 34, 0);
 }
 
 .gj-calendar-bootstrap table tr td.today div {
@@ -1911,6 +1923,7 @@ body,
 
 #book-a-car {
 	padding-top: 100px;
+	background-color: #fff;
 }
 
 .booka-car-content {
@@ -2341,18 +2354,21 @@ body,
 }
 
 .rent-btn {
-	background-color: #000;
+	background-color: #ffd000;
 	color: #fff;
 	display: inline-block;
 	font-weight: 600;
 	margin-top: 5px;
-	padding: 8px 30px;
+	padding: 12px 30px;
 	-webkit-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
 }
 
+
+
+
 .rent-btn:hover {
-	background-color: #ffd000;
+	background-color: #080701d8;
 	color: #fff;
 }
 
